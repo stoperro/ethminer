@@ -33,6 +33,9 @@ option(BINKERN "Install AMD binary kernels" ON)
 option(DEVBUILD "Log developer metrics" OFF)
 option(USE_SYS_OPENCL "Build with system OpenCL" OFF)
 
+add_subdirectory(cmake/ethash2)
+
+
 # propagates CMake configuration options to the compiler
 function(configureProject)
     if (ETHASHCL)
@@ -67,8 +70,8 @@ find_package(Boost CONFIG REQUIRED COMPONENTS system filesystem thread)
 hunter_add_package(jsoncpp)
 find_package(jsoncpp CONFIG REQUIRED)
 
-hunter_add_package(ethash)
-find_package(ethash CONFIG REQUIRED)
+#hunter_add_package(ethash)
+#find_package(ethash CONFIG REQUIRED)
 
 configureProject()
 

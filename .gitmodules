@@ -5,3 +5,9 @@
 	path = cmake/cable
 	url = https://github.com/ethereum/cable
 	branch = master
+[submodule "cmake/ethash"]
+	path = cmake/ethash
+	url = https://github.com/chfast/ethash.git
+[submodule "cmake/ethash2"]
+	path = cmake/ethash2
+	url = https://github.com/chfast/ethash.git
